@@ -124,7 +124,7 @@ export default function TemplatesPage() {
     };
 
     fetchTemplates();
-  }, [mockTemplates]);
+  }, []); 
 
   const filteredTemplates =
     selectedCategory === "all"
