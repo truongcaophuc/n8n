@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ToastContainer } from "../components/Toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "N8N - Workflow Automation Platform",
-  description: "Powerful workflow automation platform for businesses and developers",
+  description:
+    "Powerful workflow automation platform for businesses and developers",
   keywords: ["n8n", "workflow", "automation", "no-code", "low-code"],
 };
 
@@ -28,9 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  text-white min-h-screen`}
       >
         {children}
+        <ToastContainer />
       </body>
     </html>
   );

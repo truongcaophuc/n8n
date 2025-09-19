@@ -1,0 +1,35 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient circle for F -->
+  <defs>
+    <linearGradient id="fGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34D399;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Decorative flow lines -->
+  <path d="M15 25 Q25 15, 35 25 Q45 35, 55 25" stroke="url(#fGradient)" stroke-width="2" fill="none" opacity="0.3"/>
+  <path d="M15 35 Q25 25, 35 35 Q45 45, 55 35" stroke="url(#fGradient)" stroke-width="2" fill="none" opacity="0.2"/>
+  
+  <!-- Main F letter in a circle -->
+  <circle cx="30" cy="30" r="20" fill="url(#fGradient)" />
+  <text x="30" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">F</text>
+  
+  <!-- Brand name "lowly" -->
+  <text x="65" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="url(#textGradient)">lowly</text>
+  
+  <!-- Subtle flow effect -->
+  <circle cx="175" cy="15" r="3" fill="#10B981" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="185" cy="25" r="2" fill="#34D399" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="180" cy="35" r="2.5" fill="#059669" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>
