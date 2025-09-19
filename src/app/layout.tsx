@@ -16,11 +16,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "N8N - Workflow Automation Platform",
-  description:
-    "Powerful workflow automation platform for businesses and developers",
-  keywords: ["n8n", "workflow", "automation", "no-code", "low-code"],
+  title: "Flowly - n8n Workflow Automation Platform",
+  description: "Flowly giúp doanh nghiệp và lập trình viên thiết kế, tự động hóa workflow nhanh chóng với n8n.",
+  keywords: ["Flowly", "n8n", "workflow", "automation", "no-code", "low-code"],
+   icons: {
+    icon: "/flowly-logo-artistic.svg",      // favicon mặc định
+  },
 };
+
 
 export default function RootLayout({
   children,
